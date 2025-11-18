@@ -16,25 +16,39 @@
     --text-color: #fff;
     --main-color: #7b4bb7;
 }
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
-
 body {
     background: var(--bg-color);
     font-family: "Poppins", sans-serif;
+    color: var(--text-color);
 }
-
 html::-webkit-scrollbar {
     width: 0.8rem;
 }
-
 html::-webkit-scrollbar-track {
     background: var(--bg-color);
 }
-
 html::-webkit-scrollbar-thumb {
     background: var(--main-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 9%;
+    background: rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo{
+    font-size: 3rem;
+    
 }
