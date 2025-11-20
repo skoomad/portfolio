@@ -226,12 +226,27 @@ span {
         content: "Aspiring Developer";
     }
     50%, 60% {
-        content: "Tech Enthusiast";
+        content: "Enthusiast of 3D Tech";
     }
     75%, 85% {
-        content: "Lifelong Learner";
+        content: "Editor of the Videos";
     }
     100% {
-        content: "Ambitious Student";
+        content: "Entrepreneur";
+    }
+}
+@keyframes typing {
+    10%, 15%, 
+    30%, 35%, 
+    50%, 55%, 
+    70%, 75%, 
+    90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 
+    25%, 40%,
+    45%, 60%, 
+    65%, 80%, 85%{
+        width: calc(100%+8px); 
     }
 }
