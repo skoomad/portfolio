@@ -295,7 +295,7 @@ span {
     height: 300px;
     border-radius: 3rem;
     cursor: pointer;
-    transition: 0.3s ease
+    transition: 0.3s ease;
 }
 .skills-box:hover {
     background: transparent;
