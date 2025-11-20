@@ -339,3 +339,45 @@ span {
         grid-template-columns: repeat(1,1fr);
     }
 }
+
+/* Unity section*/
+
+.unity {
+    background: var (--bg-color);
+}
+.unity-container {
+    background: #e1352c46;
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.unity .container .row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+.skill .container .bar {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    background: var(--bg-color);
+    transition: 0.3s ease;
+}
+.skill .container .bar:hover {
+    box-shadow: 0 4px 10px var(--main-color);
+}
+.skill .container .bar:hover .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    margin-top: 1rem;
+}
+.skill .container .bar:hover .info span {
+    font-size: 2rem;
+    font-weight: 500;
+}
