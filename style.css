@@ -281,6 +281,9 @@ span {
 .skills {
     background: var(--second-bg-color);
 }
+.heading {
+
+}
 .skills-containter {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -289,10 +292,16 @@ span {
 }
 .skills-box {
     background-color: var(--main--color);
-    height: 250px;
+    height: 300px;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease
+}
+.skills-box:hover {
+    background: transparent;
+    color: var(--text-color);
+    transform: scale(1.05);
+    border: 1px soldi var(--main--color);
 }
 .skills-box .skills-info {
     display: flex;
@@ -313,4 +322,20 @@ span {
     font-weight: 400;
     max-height: 100px;
     margin: auto;
+}
+@media (max-width: 991px) {
+    section {
+        padding:10rem 3% 2rem;
+    }
+    .services{
+        padding-bottom: 7rem;
+    }
+}
+@media (max-width:895px) {
+    .skills h2 {
+        margin-bottom: 3rem;
+    }
+    .skills-container {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
