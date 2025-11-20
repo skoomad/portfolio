@@ -366,9 +366,11 @@ span {
     border-radius: 1rem;
     background: var(--bg-color);
     transition: 0.3s ease;
+    cursor: pointer;
 }
 .skill .container .bar:hover {
     box-shadow: 0 4px 10px var(--main-color);
+    transform: scale(1.03);
 }
 .skill .container .bar:hover .info {
     display: flex;
@@ -380,4 +382,5 @@ span {
 .skill .container .bar:hover .info span {
     font-size: 2rem;
     font-weight: 500;
+    margin-left: 0.5rem;
 }
