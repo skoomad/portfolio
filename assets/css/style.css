@@ -341,65 +341,86 @@ span {
     }
 }
 
-/* Unity section*/
+/* New skills grid (image-based) */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2.4rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem 0;
+}
+.skill-item {
+  background: transparent;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.skill-item img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  box-shadow: 0 8px 30px rgba(123,75,183,0.12);
+}
+.skill-item h4 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+.skill-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(123,75,183,0.16);
+}
 
+
+/* Unity section */
 .unity {
-    background: var (--bg-color);
+  background: var(--bg-color);
 }
-.unity-container {
-    background: #e1352c46;
-    color: var(--text-color);
-    border-radius: 1rem;
-    padding: 2rem;
-    width: 70%;
-    margin: auto;
-    margin-top: 2rem;
+.unity-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem 0;
 }
-.unity .container .row {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    flex-wrap: wrap;
-    gap: 1.8rem;
+.unity-card {
+  background: var(--second-bg-color);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.04);
 }
-.unity .container .bar {
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 1rem;
-    background: var(--bg-color);
-    transition: 0.3s ease;
-    cursor: pointer;
+.unity-thumb {
+  width: 100%;
+  padding-top: 66.66%;
+  background: rgba(255,255,255,0.02);
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+  background-size: cover;
+  background-position: center;
 }
-.unity .container .bar:hover {
-    box-shadow: 0 4px 10px var(--main-color);
-    transform: scale(1.03);
+.unity-card h4 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
-.unity .container .bar:hover .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:1rem;
-    margin-top: 1rem;
+.unity-desc {
+  color: #cfcfcf;
+  font-size: 1.4rem;
+  min-height: 2.4rem;
 }
-.skill .container .bar:hover .info span {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-left: 0.5rem;
+@media screen and (max-width: 900px) {
+  .unity-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-@media screen and (max-width: 600px) {
-    .unity .container {
-        margin: 0;
-        padding: 0;
-    }
-    .unity .container .row {
-        grid-template-columns: repeat(2, 1fr);
-        margin: 1rem;
-        padding: 2rem 0.2rem 2rem 0.2rem;
-        gap: 1rem;
-    }
-    .skills .container {
-        margin-top: 5px;
-        width: 100%;
-    }
+@media screen and (max-width: 500px) {
+  .unity-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* blender section section */
