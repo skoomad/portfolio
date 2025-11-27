@@ -423,6 +423,50 @@ span {
   }
 }
 
+/* Generic portfolio grid used on the separate pages */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+}
+.portfolio-card {
+  background: var(--second-bg-color);
+  border-radius: 1rem;
+  padding: 1.6rem;
+  text-align: center;
+  min-height: 34rem; /* make cards large and visible */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+.portfolio-thumb {
+  width: 100%;
+  height: 22rem; /* large square area */
+  background: rgba(255,255,255,0.02);
+  border-radius: 0.8rem;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1.2rem;
+}
+.portfolio-card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+.portfolio-text {
+  color: #cfcfcf;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .portfolio-grid { grid-template-columns: repeat(1, 1fr); }
+}
+
+
 /* blender section section */
 
 /* eduction section */
