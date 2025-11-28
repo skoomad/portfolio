@@ -564,6 +564,37 @@ span {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+/* Featured video embed */
+.featured-video {
+    flex: 1;
+}
+.featured-video iframe {
+    border-radius: 0.8rem;
+    box-shadow: 0 8px 30px rgba(123,75,183,0.16);
+}
+
+.featured-software {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #cfcfcf;
+}
+
+/* VFX specs highlight */
+.vfx-specs {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: rgba(123, 75, 183, 0.12);
+    border-left: 4px solid var(--main-color);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.vfx-specs p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
 /* blender section section */
 
 /* eduction section */
