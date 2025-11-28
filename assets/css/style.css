@@ -139,7 +139,10 @@ span {
 .home-img img {
     position: relative;
     width: 32vw;
+    height: 32vw;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
+    object-fit: cover;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
 }
