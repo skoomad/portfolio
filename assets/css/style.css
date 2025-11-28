@@ -466,10 +466,104 @@ span {
 }
 
 @media (max-width: 900px) {
-  .portfolio-grid { grid-template-columns: repeat(1, 1fr); }
+    .portfolio-grid { grid-template-columns: repeat(1, 1fr); }
 }
 
+/* Featured Project Layout */
+.featured-project {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: var(--second-bg-color);
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.04);
+}
+.featured-content {
+    flex: 1;
+}
+.featured-content h3 {
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+.featured-content h3 a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.featured-content h3 a:hover {
+    color: #fff;
+    text-shadow: 0 0 15px var(--main-color);
+}
+.featured-description {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #cfcfcf;
+}
+.featured-image {
+    flex: 1;
+}
+.featured-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.8rem;
+    box-shadow: 0 8px 30px rgba(123,75,183,0.16);
+}
 
+/* Screenshots Section */
+.screenshots-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+.screenshots-heading {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.screenshot-item {
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(123,75,183,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.screenshot-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(123,75,183,0.24);
+}
+
+@media (max-width: 900px) {
+    .featured-project {
+        flex-direction: column;
+    }
+    .screenshots-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .featured-content h3 {
+        font-size: 2rem;
+    }
+    .featured-description {
+        font-size: 1.4rem;
+    }
+    .screenshots-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 /* blender section section */
 
 /* eduction section */
