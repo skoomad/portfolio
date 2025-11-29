@@ -544,6 +544,13 @@ span {
     box-shadow: 0 8px 25px rgba(123,75,183,0.24);
 }
 
+/* Two-column renders gallery */
+.renders-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
 @media (max-width: 900px) {
     .featured-project {
         flex-direction: column;
